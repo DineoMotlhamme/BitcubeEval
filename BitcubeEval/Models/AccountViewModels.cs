@@ -64,6 +64,12 @@ namespace BitcubeEval.Models
 
     public class RegisterViewModel
     {
+
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "Lastname")]
+        public string Lastname { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
